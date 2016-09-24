@@ -10,6 +10,9 @@ class MoviesController < ApplicationController
     # will render app/views/movies/show.<extension> by default
   end
 
+  # rails uses 'convention' over 'configuration'
+  # example - in the rendering of views as below...
+  # a controller action will render view with its same name
   def index
     @movies = Movie.all
   end
