@@ -12400,3 +12400,44 @@ Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db6
 
 
 Started GET "/__meta_request/755028bf-5667-4991-bcae-dfb3410e5f69.json" for ::1 at 2016-09-26 10:30:17 -0500
+
+
+Started POST "/login_create" for ::1 at 2016-09-26 11:30:28 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a+ySyq0I5OkgjwFbA5i34r2MMMaFyFJWMCgTDqNW+fKMiMrV7qck/UGlBhgh7Bt839QS8p+ItE0bHdAUp/RGVA==", "session"=>{"user_id"=>"Bill", "email"=>"Bill"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "Bill"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "Bill"]]
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 12ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/movies" for ::1 at 2016-09-26 11:30:28 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1  [["session_token", "YvYczRM0yqGIvlVenb7JLA=="]]
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 49ms (Views: 42.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/__meta_request/61eb3c39-24e9-4c48-9ddd-bdb230b968ef.json" for ::1 at 2016-09-26 11:30:28 -0500
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for ::1 at 2016-09-26 11:30:28 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-26 11:30:28 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-26 11:30:28 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-26 11:30:28 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-09-26 11:30:28 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-26 11:30:28 -0500
+
+
+Started GET "/__meta_request/adcc296c-da11-40e2-b16f-9f08654b8651.json" for ::1 at 2016-09-26 11:30:28 -0500

@@ -13,6 +13,7 @@ class SessionsController < ApplicationController
     user_email = User.find_by_email(session_params[:email])
     if user.nil? || user_email.nil? # if user is not found or email is not found unsuccessful login
       flash[:notice] = 'Invalid User ID/Email combination'
+
       redirect_to login_path
     else
       session_token = user.session_token # lookup user's session token from db
