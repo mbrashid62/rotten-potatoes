@@ -1,5 +1,12 @@
 class MoviesController < ApplicationController
 
+  before_filter :set_current_user #executes set_current_user prior to executing any MoviesController action
+
+  def set_current_user
+    @current_user ||=	session[:session_token	] &&
+        User.
+            find_by_session_token(session[:session_token])
+  end
   def movie_params
     params.require(:movie).permit(:title, :rating, :description, :release_date)
   end

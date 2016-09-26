@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-
   def self.create_user! (user_params)
     session_token = SecureRandom.base64
     user_params[:session_token] = session_token

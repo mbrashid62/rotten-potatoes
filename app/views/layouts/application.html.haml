@@ -8,11 +8,15 @@
 
   %body
     %h1.title Rotten Potatoes!
-    = button_to 'Sign Up/Login', new_user_path, :method => :get
+    - if !@current_user
+      = button_to 'Sign Up/Login', login_path, :method => :get, :id => 'signuplogin'
+
+    - else
+      %p Hello, #{@current_user.email}!
+      = button_to 'Logout', logout_path, :method => :delete, :id => 'logout'
     #main
       - if flash[:notice]
         #notice.message= flash[:notice]
       - elsif flash[:warning]
         #warning.message= flash[:warning]
-
       = yield

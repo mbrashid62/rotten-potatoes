@@ -57,4 +57,9 @@ Rails.application.routes.draw do
   #   end
 
   resources :users # creates all crud routes for users
+
+
+  match '/login', to: 'sessions#new', via: :get
+  match '/login_create', to: 'sessions#create', via: :post
+  match '/logout', to: 'sessions#destroy', via: :delete
 end

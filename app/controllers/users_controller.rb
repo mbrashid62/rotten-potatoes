@@ -24,7 +24,7 @@ class UsersController < ApplicationController
    else
      @user = User.create_user!(user_params)
      flash[:notice] = "Welcome #{@user.email}, your account has been successfully created."
-     redirect_to root_path # if successful registration redirect to home page
+     redirect_to login_path # if successful registration redirect to home page
    end
 
   end
