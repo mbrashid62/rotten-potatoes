@@ -16935,3 +16935,121 @@ Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/__meta_request/f640f3d5-b6eb-43e5-a618-15399dab8ae1.json" for ::1 at 2016-09-28 20:59:41 -0500
+
+
+Started GET "/" for ::1 at 2016-09-28 22:14:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (14.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (17.8ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (45.3ms)
+Completed 200 OK in 768ms (Views: 720.8ms | ActiveRecord: 18.3ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for ::1 at 2016-09-28 22:14:21 -0500
+
+
+Started GET "/assets/application.self-e50da9c2911e70d9043579647977c0410af0b09af7e6093c62832c87e83f1b11.css?body=1" for ::1 at 2016-09-28 22:14:21 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-28 22:14:21 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-28 22:14:21 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-28 22:14:21 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-09-28 22:14:21 -0500
+
+
+Started GET "/login" for ::1 at 2016-09-28 22:14:22 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (19.4ms)
+Completed 200 OK in 96ms (Views: 95.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for ::1 at 2016-09-28 22:14:23 -0500
+
+
+Started GET "/assets/application.self-e50da9c2911e70d9043579647977c0410af0b09af7e6093c62832c87e83f1b11.css?body=1" for ::1 at 2016-09-28 22:14:23 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-28 22:14:23 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-28 22:14:23 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-28 22:14:23 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-09-28 22:14:23 -0500
+
+
+Started POST "/login_create" for ::1 at 2016-09-28 22:14:25 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p6VblXKLZJmvahSF3pxGYa5n7AZRyd1XR3VcWC0fB92516PmaTqcyjnn0TazIhl4RW4GSoXpIiqGhLCf9WJ8ig==", "session"=>{"user_id"=>"hi", "email"=>"hi"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (14.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "hi"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "hi"]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 65ms (ActiveRecord: 16.0ms)
+
+
+Started GET "/login" for ::1 at 2016-09-28 22:14:25 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for ::1 at 2016-09-28 22:14:25 -0500
+
+
+Started GET "/assets/application.self-e50da9c2911e70d9043579647977c0410af0b09af7e6093c62832c87e83f1b11.css?body=1" for ::1 at 2016-09-28 22:14:25 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-28 22:14:25 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-28 22:14:25 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-09-28 22:14:25 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-28 22:14:25 -0500
+
+
+Started POST "/login_create" for ::1 at 2016-09-28 22:14:29 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1ZsMhzzF6h3+oUVeF5YSq8EwEl7UtMXt7oNMpNtTxvPL6fT0J3QSTmgsgO16KE2yKjn4EgCUOpAvcqBjAy69pA==", "session"=>{"user_id"=>"yo", "email"=>"yo"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "yo"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "yo"]]
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies" for ::1 at 2016-09-28 22:14:29 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1[0m  [["session_token", "yjPcWiKL56gYE0TarYe6HQ=="]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for ::1 at 2016-09-28 22:14:29 -0500
+
+
+Started GET "/assets/application.self-e50da9c2911e70d9043579647977c0410af0b09af7e6093c62832c87e83f1b11.css?body=1" for ::1 at 2016-09-28 22:14:29 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-28 22:14:29 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-28 22:14:29 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-09-28 22:14:29 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-28 22:14:29 -0500
