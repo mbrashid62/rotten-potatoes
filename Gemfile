@@ -51,7 +51,6 @@ group :development, :test do
   gem 'spring'
 
   gem 'meta_request'
-
 end
 
 group :production do
